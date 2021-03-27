@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . /myreactapp/
 
-RUN npm test
-
 EXPOSE 80 3000 443 8080
 
 
