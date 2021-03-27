@@ -8,22 +8,12 @@ RUN npm install
 
 COPY . /myreactapp/
 
-RUN npm run build
-
-FROM nginx
-
-FROM nginx:1.17.1
-
-COPY --from=build /client_app/build /usr/share/nginx/html
-
-RUN rm /etc/nginx/conf.d/default.conf
-
-COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+RUN npm test
 
 EXPOSE 80 3000 443 8080
 
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "start"]
 
 
 
