@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . /myreactapp/
 
-EXPOSE 80 3000 443 8080
+EXPOSE 80 3000 443
 
 
 CMD ["npm", "start"]
