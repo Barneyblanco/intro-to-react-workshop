@@ -9,6 +9,7 @@ import NavigationFooter from '../../components/navigation/footer';
 
 import Exercise from './exercise';
 import Tips from './tips';
+import SecondExercise from './secondexercise';
 
 const ClassVsFunctioNBasedComponentsLesson = () => {
   useRegisterNavLink('https://reactjs.org/docs/react-component.html', 'React Components');
@@ -53,6 +54,7 @@ const MyComponent = ({ children }) => (
       <div className="mt-4 text-justify">
         <ExerciseSandbox>
           <Exercise />
+          <SecondExercise />
         </ExerciseSandbox>
       </div>
       <NavigationFooter lesson="class-vs-function-based-components" />

@@ -84,8 +84,29 @@ import React from 'react';
  * };
  **/
 
-const Exercise = () => (
-  <span />
-);
+//const Exercise = () => (
+  //<span />
+//);
+
+
+
+const Exercise = ({action, method}) => (
+<div>
+  <h3   class = "text-center">Functional based component</h3>
+  <form action = {action} method = {method} class = "form-group">
+    <input type = "text" name = "firstname" placeholder = "Enter your firstname" class = "form-control mt-2" />
+    <input type = "text" name = "lastname" placeholder = "Enter your lastname" class = "form-control mt-2" />
+    <input type = "password" name = "password" placeholder = "Enter your password" class = "form-control mt-2" />
+    <select class = "form-control mt-2">
+      <option value = "React">React</option>
+      <option value = "Angular">Angular</option>
+      <option value = "Vue">Vue</option>
+    </select>
+  <button class = "btn btn-primary mt-2">Submit</button>
+  </form>
+</div>
+
+)
 
 export default Exercise;
+
